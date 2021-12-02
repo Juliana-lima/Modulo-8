@@ -7,33 +7,26 @@
             Para visualizar meus pedidos
 
             Contexto:
-            Dado que estou na página "http://lojaebac.ebaconline.art.br/minha-conta/"
-
+            Dado que estou na página login da EBAC-SHOP
 
             Cenário: Login para vizualizar pedido de compra
-            E digito o email "mariateste@teste.com.br" no campo "Username or email address"
-            E digito a senha "Bbq63DZmBUAFfeW" no campo "Password"
-            E clico em "Login"
-            Quando sou redirecionada para a página "Minha Conta"
-            Então visualizo os meus pedidos de compra
+            Quando eu digitar o email "mariateste@teste.com.br"
+            E a senha "Bbq63DZmBUAFfeW"
+            Então visualizo os meus pedidos
 
             Cenário: Login com email inválida
-            E digito o email "invalido357@teste.com.br" no campo "Username or email address"
-            E digito a senha "Bbq63DZmBUAFfeW" no campo "Password"
-            Quando clico em "Login"
+            Quando eu digitar o email "invalido357@teste.com.br"
+            E a senha "Bbq63DZmBUAFfeW"
             Então visualizo a mensagem de alerta "Usuário ou senha inválidos"
 
             Cenário: Login com senha inválida
-            E digito o email "mariateste@teste.com.br" no campo "Username or email address"
-            E digito a senha "fysb5586" no campo "Password"
-            Quando clico em "Login"
+            Quando eu digitar o email "mariateste@teste.com.br"
+            E a senha "fysb5586"
             Então visualizo a mensagem de alerta "Usuário ou senha inválidos"
 
             Esquema do Cenário: Múltiplos logins válidos
-            E digito o <email> no campo "Username or email address"
-            E digito a <senha> no campo "Password"
-            E clico em "Login"
-            Quando sou redirecionada para a página "Minha Conta"
+            Quando eu digitar o <email>
+            E a <senha>
             Então visualizo os meus pedidos de compra
 
             Exemplos:
